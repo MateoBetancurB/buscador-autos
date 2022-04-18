@@ -21,6 +21,7 @@ h1 {
 	border-radius: 40px;
 	max-width: 1200px;
 	margin: 0 auto;
+	padding-bottom: 20px;
 }
 p {
 	font-size: 2rem;
@@ -46,26 +47,15 @@ form {
 	font-family: Arial, Helvetica, sans-serif;
 }
 #resultado p {
+	border-bottom: 1px solid #e1e1e1;
 	margin: 0;
 	padding: 2rem;
-	border-bottom: 1px solid #e1e1e1;
 }
 #resultado p span {
 	font-weight: bold;
 }
 #resultado p:last-of-type {
 	border: none;
-}
-.alerta {
-	padding: 1rem;
-	text-align: center;
-	font-weight: bold;
-	text-transform: uppercase;
-	color: white;
-	font-size: 2rem;
-}
-.error {
-	background-color: red;
 }
 
 .sitio-web {
@@ -78,4 +68,16 @@ form {
 }
 .sitio-web:hover {
 	color: white;
+}
+.mensajeError {
+	border: 2px solid red;
+	border-radius: 15px;
+	line-height: 70px;
+	width: 40%;
+	color: red;
+	font-size: 30px;
+	height: 10px;
+	padding-bottom: 60px;
+	text-align: center;
+	margin: 0 auto 40px auto;
 }
