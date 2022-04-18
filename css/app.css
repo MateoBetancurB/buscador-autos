@@ -13,8 +13,12 @@ h1 {
 	margin: 0;
 	color: white;
 }
+#buscador {
+	border-radius: 40px;
+}
 .contenedor {
 	background-color: white;
+	border-radius: 40px;
 	max-width: 1200px;
 	margin: 0 auto;
 }
