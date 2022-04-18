@@ -105,8 +105,21 @@ function filtrarAuto() {
 		.filter(filtrarPuertas)
 		.filter(filtrarTransmision)
 		.filter(filtrarColor);
-	console.table(resultado);
-	mostrarAutos(resultado);
+
+	//mensaje en caso de que no haya autos con esas características
+	if (resultado.length) {
+		mostrarAutos(resultado);
+	} else {
+		mensajeError();
+	}
+}
+
+function mensajeError() {
+	limpiarHTML();
+	const mensajeError = document.createElement("div");
+	mensajeError.classList.add("mensajeError");
+	mensajeError.textContent = "No hay autos con estas características";
+	resultado.appendChild(mensajeError);
 }
 
 function filtrarMarca(auto) {
